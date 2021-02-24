@@ -1,0 +1,12 @@
+.box {
+
+}
+
+.root {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 8px;
+
+    transition: 1s smooth ease-in;
+}

@@ -34,6 +34,9 @@ body {
 }
 
 /* spacing */
+
+/* margin */
+
 .mt-2 {
   margin-top: 2px;
 }
@@ -113,6 +116,72 @@ body {
 .mr-24 {
   margin-right: 24px;
 }
+
+/* padding */
+
+.p-2 {
+  padding: 2px;
+}
+
+.p-4 {
+  padding: 4px;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.p-16 {
+  padding: 16px;
+}
+
+.p-24 {
+  padding: 24px;
+}
+
+.p-2 {
+  padding: 2px;
+}
+
+.px-4 {
+  padding: 0 4px;
+}
+
+.px-8 {
+  padding: 0 8px;
+}
+
+.px-16 {
+  padding: 0 16px;
+}
+
+.px-24 {
+  padding: 0 24px;
+}
+
+
+
+.py-2 {
+  padding: 2px 0;
+}
+
+.py-4 {
+  padding: 4px 0;
+}
+
+.py-8 {
+  padding: 8px 0;
+}
+
+.py-16 {
+  padding: 16px 0;
+}
+
+.py-24 {
+  padding: 24px 0;
+}
+
+
 
 .pt-2 {
   padding-top: 2px;
@@ -210,4 +279,22 @@ body {
 
 .w100 {
   width: 100%;
+}
+
+/*asdsa*/
+
+.bordered{
+  border: 1px solid black;
+}
+
+.radius-4{
+  border-radius: 4px;
+}
+
+.radius-8{
+  border-radius: 8px;
+}
+
+.radius-16{
+  border-radius: 16px;
 }
