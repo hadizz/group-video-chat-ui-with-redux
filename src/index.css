@@ -30,6 +30,15 @@ body {
   --space48: 48px;
 }
 
+.chips {
+  display: inline-block;
+  padding: var(--space16) var(--space24);
+  line-height: 0;
+  height: var(--space24);
+  border-radius: var(--space24);
+  background-color: var(--black50);
+}
+
 /* grid system  */
 
 .d-flex {

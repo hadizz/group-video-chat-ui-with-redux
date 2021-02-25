@@ -5,7 +5,12 @@ import IconButton from '../Components/IconButton/IconButton'
 const Bottom = () => {
   return (
     <div className={styles.root}>
-      bottom
+        <div className="chips">
+            Hadi Zare
+        </div>
+        <div className="chips">
+            Alexandra
+        </div>
       <IconButton iconName="call" size="small" color="red50" iconColor='red' onClick={e => console.log(e)}/>
       <IconButton iconName="call" size="medium" color="red" onClick={e => console.log(e)}/>
       <IconButton iconName="call" size="large" color="red" onClick={e => console.log(e)}/>
