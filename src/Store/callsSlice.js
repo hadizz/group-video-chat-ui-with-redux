@@ -12,22 +12,12 @@ export const callsSlice = createSlice({
   },
   reducers: {
     onDragEnd: (state, action) => {
-      const { destination, source } = action.payload
+      const { start, end } = action.payload
 
-      if (!destination) {
-        return
-      }
+      const draggingObject = state.items[start]
 
-      if (
-        destination.droppableId === source.droppableId &&
-        destination.index === source.index
-      ) {
-        return
-      }
-
-      const draggingObject = state.items[source.index]
-      state.items.splice(source.index, 1)
-      state.items.splice(destination.index, 0, draggingObject)
+      state.items.splice(start, 1)
+      state.items.splice(end, 0, draggingObject)
     },
   },
 })

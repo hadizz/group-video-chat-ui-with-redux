@@ -1,7 +1,7 @@
 import React from 'react'
 import CallBox from '../CallBox/CallBox'
 import { useDispatch, useSelector } from 'react-redux'
-import { selectCalls } from '../../Store/callsSlice'
+import { onDragEnd, selectCalls } from '../../Store/callsSlice'
 import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import styles from './CallsList.module.css'
@@ -16,7 +16,7 @@ const CallsList = (props) => {
     <DndProvider backend={HTML5Backend}>
       <div className={styles.grid}>
         {people.map((person, index) => (
-          <DragItem key={person.id} id={person.id} onMoveItem={props => console.log(props)}>
+          <DragItem key={person.id} id={person.id} onMoveItem={(start, end) => dispatch(onDragEnd({start, end}))}>
              <GridItem>
                   <CallBox person={person} key={person.id} index={index} />
              </GridItem>
