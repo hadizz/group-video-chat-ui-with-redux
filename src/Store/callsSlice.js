@@ -12,8 +12,6 @@ export const callsSlice = createSlice({
   },
   reducers: {
     onDragEnd: (state, action) => {
-      // state.items += 1;
-
         const { destination, source } = action.payload;
 
         if (!destination) {
@@ -27,34 +25,9 @@ export const callsSlice = createSlice({
             return;
         }
 
-        // const draggingObject = state.items[source.index];
-        // state.items[source.index] = state.items[destination.index];
-        // state.items[destination.index] = draggingObject;
-
-
         const draggingObject = state.items[source.index];
         state.items.splice(source.index, 1);
         state.items.splice(destination.index, 0, draggingObject);
-
-        // const column = this.state.columns[source.droppableId];
-        // const newTaskIds = Array.from(column.taskIds);
-        // newTaskIds.splice(source.index, 1);
-        // newTaskIds.splice(destination.index, 0, draggableId);
-        //
-        // const newColumn = {
-        //     ...column,
-        //     taskIds: newTaskIds,
-        // };
-        //
-        // const newState = {
-        //     ...this.state,
-        //     columns: {
-        //         ...this.state.columns,
-        //         [newColumn.id]: newColumn,
-        //     },
-        // };
-        //
-        // this.setState(newState);
     },
   },
 });
