@@ -1,8 +1,16 @@
 .root {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 8px;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 8px;
 
-    transition: 1s smooth ease-in;
+  transition: 1s smooth ease-in;
 }
+
+.grid {
+  width: 600px;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+

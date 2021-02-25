@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -159,8 +159,6 @@ body {
   padding: 0 24px;
 }
 
-
-
 .py-2 {
   padding: 2px 0;
 }
@@ -180,8 +178,6 @@ body {
 .py-24 {
   padding: 24px 0;
 }
-
-
 
 .pt-2 {
   padding-top: 2px;
@@ -283,18 +279,18 @@ body {
 
 /*asdsa*/
 
-.bordered{
+.bordered {
   border: 1px solid black;
 }
 
-.radius-4{
+.radius-4 {
   border-radius: 4px;
 }
 
-.radius-8{
+.radius-8 {
   border-radius: 8px;
 }
 
-.radius-16{
+.radius-16 {
   border-radius: 16px;
 }
