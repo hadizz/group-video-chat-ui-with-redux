@@ -1,14 +1,14 @@
 import React from 'react'
-import CallBox from '../CallBox/CallBox'
+import CallBox from '../Components/CallBox/CallBox'
 import { useDispatch, useSelector } from 'react-redux'
 import { onDragEnd, selectCalls } from '../../Store/callsSlice'
 import { DndProvider } from 'react-dnd'
 import { HTML5Backend } from 'react-dnd-html5-backend'
 import styles from './CallsList.module.css'
-import DragItem from '../DragItem/DragItem'
-import { GridItem } from '../GridItem/GridItem';
+import DragItem from '../Components/DragItem/DragItem'
+import { GridItem } from '../Components/GridItem/GridItem';
 
-const CallsList = (props) => {
+const CallsList = () => {
   const people = useSelector(selectCalls)
   const dispatch = useDispatch()
 

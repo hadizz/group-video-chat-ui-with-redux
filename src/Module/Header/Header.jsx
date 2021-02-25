@@ -5,7 +5,7 @@ import Clock from '../../Resources/Images/Clock.svg';
 
 const Header = () => {
     return (
-        <div className={styles.header}>
+        <div className={styles.root}>
             <img className={styles.logo} src={UniClient} alt="uni client" />
             <span className="mr-16">Case Of Kennedy Murder</span>
             <div className="pt-4 mr-8">
