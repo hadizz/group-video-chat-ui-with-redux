@@ -1,0 +1,58 @@
+.root {
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+
+  outline: none;
+
+  -webkit-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+
+  text-decoration: none;
+  white-space: pre;
+
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+}
+
+.bgColor-default {
+  background: none;
+}
+
+.bgColor-gray {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.bgColor-red {
+  background: var(--red);
+}
+
+.bgColor-red50 {
+  background: var(--red50);
+}
+
+.size-small {
+  width: var(--space24);
+  height: var(--space24);
+}
+
+.size-medium {
+  width: var(--space40);
+  height: var(--space40);
+}
+
+.size-large {
+  width: var(--space48);
+  height: var(--space48);
+}
+
+.icon {
+
+}
+
+.icon svg path {
+  fill: red;
+}

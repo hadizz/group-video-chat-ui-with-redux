@@ -7,6 +7,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* variables */
+:root {
+  --red: #EA4141;
+  --red50: rgba(234, 65, 65, 0.2);
+  --green: #1BD56B;
+  --black50: rgba(0,0,0,0.5);
+  --gray: #9DA8B2;
+  --space2: 2px;
+  --space4: 4px;
+  --space8: 8px;
+  --space16: 16px;
+  --space24: 24px;
+  --space32: 32px;
+  --space40: 40px;
+  --space48: 48px;
+}
+
 /* grid system  */
 
 .d-flex {
