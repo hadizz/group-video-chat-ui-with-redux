@@ -3,6 +3,7 @@ import CallsList from './Components/CallsList/CallsList'
 import styles from './App.module.css'
 import generateClassName from './utils/dom'
 import Header from './Components/Header/Header'
+import Bottom from './Components/Bottom/Bottom';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
     >
       <Header />
       <CallsList />
-      <div className={styles.bottom}>bottom</div>
+      <Bottom />
     </div>
   )
 }
