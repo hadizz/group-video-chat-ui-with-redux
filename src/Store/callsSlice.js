@@ -4,19 +4,32 @@ export const callsSlice = createSlice({
   name: 'calls',
   initialState: {
     items: [
-      { id: 0, name: 'sara', image: 'https://picsum.photos/400/300' },
-      { id: 1, name: 'jessy', image: 'https://picsum.photos/200/300' },
+      {
+        id: 0,
+        name: 'sara',
+        image:
+          'https://i.picsum.photos/id/889/400/300.jpg?hmac=bnjifYNFcybzu2SpzMsIa7Od1iOA9Jjz7imYROcHw-Q',
+        isMobile: false,
+      },
+      {
+        id: 1,
+        name: 'jessy',
+        image: 'https://picsum.photos/200/300',
+        isMobile: true,
+      },
       {
         id: 2,
         name: 'john',
         image:
-          'https://i.picsum.photos/id/252/485/365.jpg?hmac=oQjukK8AX6tXb1poDBzx5kG3PvEPovtz3sKfXtw9vqo',
+          'https://i.picsum.photos/id/566/400/300.jpg?hmac=u0bG5G9ZQhfV4II98IRXpm3Sfaz2xaIpfbYWxRCUOaY',
+        isMobile: false,
       },
       {
         id: 3,
         name: 'tommy',
         image:
-          'https://i.picsum.photos/id/354/485/363.jpg?hmac=2tKGZb5T3DeTm4laK2DkKCRBJeye4YpPJCHwVcu6ZBA',
+          'https://i.picsum.photos/id/877/400/300.jpg?hmac=qD6pLIhs_M4_LL-K2MYUuyd89Dzqfo1iNVEM7CyYScs',
+        isMobile: false,
       },
     ],
   },

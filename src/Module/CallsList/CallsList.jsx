@@ -18,9 +18,7 @@ const CallsList = () => {
         }}
       >
         {calls.map((call, index) => (
-          <div>
-            <CallBox call={call} key={call.id} index={index} />
-          </div>
+          <CallBox call={call} key={call.id} index={index} />
         ))}
       </div>
     </div>

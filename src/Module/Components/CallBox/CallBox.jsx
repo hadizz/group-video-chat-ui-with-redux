@@ -10,6 +10,11 @@ const CallBox = (props) => {
 
   return (
     <div
+      style={{
+        ...(props.call.isMobile
+          ? { height: 340, width: 250 }
+          : { height: 340, width: 450 }),
+      }}
       className={styles.root}
       onDragStart={(ev) => ev.dataTransfer.setData('id', props.call.id)}
       onDragOver={(ev) => ev.preventDefault()}
@@ -20,7 +25,13 @@ const CallBox = (props) => {
       }
       draggable
     >
-      <img src="https://picsum.photos/200/300" />
+      <div
+        style={{
+          width: '100%',
+          height: '100%',
+          background: `url(${props.call.image}) center / cover no-repeat`,
+        }}
+      />
       <div className={generateClassName(['d-flex flex-x-center', styles.test])}>
         <div className="chips">{props.call.name}</div>
         <IconButton
