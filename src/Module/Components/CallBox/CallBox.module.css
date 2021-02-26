@@ -1,0 +1,11 @@
+.root {
+  position: relative;
+  margin: auto;
+}
+
+.test {
+  position: absolute;
+  bottom: var(--space16);
+  right: 0;
+  width: 100%;
+}

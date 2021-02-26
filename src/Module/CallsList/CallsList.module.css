@@ -4,13 +4,17 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 8px;
 
-  transition: 1s smooth ease-in;
+  /*transition: 1s smooth ease-in;*/
 }
 
 .grid {
-  width: 600px;
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
 }
 
+.wrap {
+  max-width: calc(100% - 100px);
+  margin: auto;
+  min-width: calc(100% - 300px);
+}

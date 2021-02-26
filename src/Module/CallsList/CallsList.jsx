@@ -1,29 +1,29 @@
 import React from 'react'
 import CallBox from '../Components/CallBox/CallBox'
-import { useDispatch, useSelector } from 'react-redux'
-import { onDragEnd, selectCalls } from '../../Store/callsSlice'
-import { DndProvider } from 'react-dnd'
-import { HTML5Backend } from 'react-dnd-html5-backend'
+import { useSelector } from 'react-redux'
+import { selectCalls } from '../../Store/callsSlice'
 import styles from './CallsList.module.css'
-import DragItem from '../Components/DragItem/DragItem'
-import { GridItem } from '../Components/GridItem/GridItem';
 
 const CallsList = () => {
-  const people = useSelector(selectCalls)
-  const dispatch = useDispatch()
+  const calls = useSelector(selectCalls)
 
   return (
-    <DndProvider backend={HTML5Backend}>
-      <div className={styles.grid}>
-        {people.map((person, index) => (
-          <DragItem key={person.id} id={person.id} onMoveItem={(start, end) => dispatch(onDragEnd({start, end}))}>
-             <GridItem>
-                  <CallBox person={person} key={person.id} index={index} />
-             </GridItem>
-          </DragItem>
+    <div className={styles.wrap}>
+      <div
+        style={{
+          display: 'grid',
+          gridTemplateRows: 'repeat(2, 1fr)',
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          gridGap: '8px',
+        }}
+      >
+        {calls.map((call, index) => (
+          <div>
+            <CallBox call={call} key={call.id} index={index} />
+          </div>
         ))}
       </div>
-    </DndProvider>
+    </div>
   )
 }
 
