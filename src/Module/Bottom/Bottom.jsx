@@ -10,7 +10,7 @@ const Bottom = () => {
       <div className="mx-24">
           <IconButton iconName="call" size="large" color="red" />
       </div>
-      <IconButton iconName="no-call" color="gray" />
+      <IconButton iconName="no-video" color="gray" />
     </div>
   )
 }

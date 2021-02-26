@@ -18,7 +18,7 @@ const IconButton = ({ iconName, size, color, iconColor, onClick }) => {
     const iconSize = generateSize();
     const color = iconColor === 'red' ? "#EA4141" : iconColor;
     switch (iconName) {
-      case 'voice':
+      case 'no-video':
         return <NoVideoIcon fill={color} size={iconSize} />
       case 'no-voice':
         return <NoVoiceIcon fill={color} size={iconSize} />
