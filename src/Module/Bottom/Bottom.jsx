@@ -1,25 +1,16 @@
 import React from 'react'
 import styles from './Bottom.module.css'
 import IconButton from '../Components/IconButton/IconButton'
+import generateClassName from '../../Utils/dom';
 
 const Bottom = () => {
   return (
-    <div className={styles.root}>
-        <div className="chips">
-            Hadi Zare
-        </div>
-        <div className="chips">
-            Alexandra
-        </div>
-      <IconButton iconName="call" size="small" color="red50" iconColor='red' onClick={e => console.log(e)}/>
-      <IconButton iconName="call" size="medium" color="red" onClick={e => console.log(e)}/>
-      <IconButton iconName="call" size="large" color="red" onClick={e => console.log(e)}/>
-      <IconButton iconName="no-voice" size="small" color="red50" iconColor='red' onClick={e => console.log(e)}/>
-      <IconButton iconName="no-voice" size="medium" color="red" onClick={e => console.log(e)}/>
-      <IconButton iconName="no-voice" size="large" color="red" onClick={e => console.log(e)}/>
-      <IconButton iconName="no-video" size="small" color="red" onClick={e => console.log(e)}/>
-      <IconButton iconName="no-video" size="medium" color="red" onClick={e => console.log(e)}/>
-      <IconButton iconName="no-video" size="large" color="red" onClick={e => console.log(e)}/>
+    <div className={generateClassName([styles.root, "d-flex flex-over-center"])}>
+      <IconButton iconName="no-voice" color="gray" />
+      <div className="mx-24">
+          <IconButton iconName="call" size="large" color="red" />
+      </div>
+      <IconButton iconName="no-call" color="gray" />
     </div>
   )
 }

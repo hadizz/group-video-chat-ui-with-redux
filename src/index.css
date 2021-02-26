@@ -65,9 +65,17 @@ body {
   align-items: center;
 }
 
+.flex-over-center {
+  justify-content: center;
+  align-items: center;
+}
+
 /* spacing */
 
 /* margin */
+.mx-24 {
+  margin: 0 24px;
+}
 
 .mt-2 {
   margin-top: 2px;
