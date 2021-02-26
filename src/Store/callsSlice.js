@@ -23,9 +23,15 @@ export const callsSlice = createSlice({
   reducers: {
     onDrop: (state, action) => {
       const { start, dest } = action.payload
-      const draggingObject = state.items[start]
-      state.items.splice(start, 1)
-      state.items.splice(dest, 0, draggingObject)
+      console.log('onDrop', start, dest)
+
+      const temp1 = state.items[start].id
+      state.items[start].id = state.items[dest].id
+      state.items[dest].id = temp1
+
+      const temp2 = state.items[start]
+      state.items[start] = state.items[dest]
+      state.items[dest] = temp2
     },
   },
 })
