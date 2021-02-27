@@ -13,32 +13,6 @@ export const callsSlice = createSlice({
         isMute: false,
         isCameraOff: true,
       },
-      {
-        id: 1,
-        name: 'jessy',
-        image: 'https://picsum.photos/200/300',
-        isMobile: true,
-        isMute: true,
-        isCameraOff: true,
-      },
-      {
-        id: 2,
-        name: 'john',
-        image:
-          'https://i.picsum.photos/id/566/400/300.jpg?hmac=u0bG5G9ZQhfV4II98IRXpm3Sfaz2xaIpfbYWxRCUOaY',
-        isMobile: false,
-        isMute: false,
-        isCameraOff: false,
-      },
-      {
-        id: 3,
-        name: 'tommy',
-        image:
-          'https://i.picsum.photos/id/877/400/300.jpg?hmac=qD6pLIhs_M4_LL-K2MYUuyd89Dzqfo1iNVEM7CyYScs',
-        isMobile: false,
-        isMute: true,
-        isCameraOff: false,
-      },
     ],
   },
   reducers: {
@@ -54,10 +28,23 @@ export const callsSlice = createSlice({
       state.items[start] = state.items[dest]
       state.items[dest] = temp2
     },
+    addCall: (state, action) => {
+      const isMobile = Math.floor(Math.random() * 2) === 1
+      const isMute = Math.floor(Math.random() * 2) === 1
+      const isCameraOff = Math.floor(Math.random() * 2) === 1
+      state.items.push({
+        id: state.items.length,
+        name: 'user' + state.items.length,
+        image: `https://picsum.photos/${isMobile ? '200' : '400'}/300`,
+        isMobile,
+        isMute,
+        isCameraOff,
+      })
+    },
   },
 })
 
-export const { onDrop } = callsSlice.actions
+export const { onDrop, addCall } = callsSlice.actions
 
 export const selectCalls = (state) => state.calls.items
 
