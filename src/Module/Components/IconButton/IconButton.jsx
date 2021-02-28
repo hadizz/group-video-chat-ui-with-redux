@@ -34,7 +34,7 @@ const IconButton = ({ iconName, size, color, iconColor, onClick, hasBadge }) => 
     }
     return (
         <div className={styles.badge}>
-          <span />
+          <span className={styles.arrow}/>
         </div>
     )
   }

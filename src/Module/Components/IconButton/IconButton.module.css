@@ -29,7 +29,7 @@
   box-shadow: inset 0 0 0 4px var(---gray30363E);
 }
 
-.badge > span::before, span::after {
+.badge .arrow::before, .arrow::after {
   border-right: 2px solid;
   content: '';
   display: block;
@@ -46,7 +46,7 @@
   color: #9DA8B2;
 }
 
-.badge > span::after {
+.badge .arrow::after {
   margin-top: -2px;
   right: 8px;
   -moz-transform: rotate(45deg);
