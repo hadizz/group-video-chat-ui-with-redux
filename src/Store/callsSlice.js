@@ -28,13 +28,13 @@ export const callsSlice = createSlice({
       state.items[start] = state.items[dest]
       state.items[dest] = temp2
     },
-    addCall: (state, action) => {
+    addCall: (state, _action) => {
       const isMobile = Math.floor(Math.random() * 2) === 1
       const isMute = Math.floor(Math.random() * 2) === 1
       const isCameraOff = Math.floor(Math.random() * 2) === 1
       state.items.push({
         id: state.items.length,
-        name: 'user' + state.items.length,
+        name: 'user ' + state.items.length,
         image: `https://picsum.photos/${isMobile ? '200' : '400'}/300`,
         isMobile,
         isMute,
