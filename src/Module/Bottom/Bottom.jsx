@@ -21,7 +21,7 @@ const Bottom = () => {
           onClick={() => dispatch(addCall())}
         />
       </div>
-      <IconButton iconName="no-video" color="gray" />
+      <IconButton iconName="no-video" color="gray" hasBadge/>
     </div>
   )
 }

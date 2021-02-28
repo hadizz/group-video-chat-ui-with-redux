@@ -3,7 +3,7 @@ import styles from './IconButton.module.css'
 import generateClassName from '../../../Utils/dom'
 import { NoVideoIcon, NoVoiceIcon, CallIcon } from './Icons'
 
-const IconButton = ({ iconName, size, color, iconColor, onClick }) => {
+const IconButton = ({ iconName, size, color, iconColor, onClick, hasBadge }) => {
 
   const generateSize = () => {
     switch (size) {
@@ -28,6 +28,17 @@ const IconButton = ({ iconName, size, color, iconColor, onClick }) => {
     }
   }
 
+  const renderBadge = () => {
+    if (!hasBadge) {
+      return null;
+    }
+    return (
+        <div className={styles.badge}>
+          <span />
+        </div>
+    )
+  }
+
   const handleOnClick = (ev) => {
     if (onClick) {
       onClick(ev)
@@ -43,6 +54,7 @@ const IconButton = ({ iconName, size, color, iconColor, onClick }) => {
         styles[`bgColor-${color ?? 'default'}`],
       ])}
     >
+      {renderBadge()}
       {generateIcon(iconColor)}
     </button>
   )
