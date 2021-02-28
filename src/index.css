@@ -15,11 +15,11 @@ body {
 
 /* variables */
 :root {
-  --red: #EA4141;
+  --red: #ea4141;
   --red50: rgba(234, 65, 65, 0.2);
-  --green: #1BD56B;
-  --black50: rgba(0,0,0,0.5);
-  --gray: #9DA8B2;
+  --green: #1bd56b;
+  --black50: rgba(0, 0, 0, 0.5);
+  --gray: #9da8b2;
   --space2: 2px;
   --space4: 4px;
   --space8: 8px;
@@ -32,7 +32,7 @@ body {
 
 .chips {
   display: inline-block;
-  padding: var(--space16) var(--space24);
+  padding: calc(var(--space16) - var(--space4)) var(--space16) var(--space16);
   line-height: 0;
   height: var(--space24);
   border-radius: var(--space24);
