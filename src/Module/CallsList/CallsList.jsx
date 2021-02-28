@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import CallBox from '../Components/CallBox/CallBox'
 import { useSelector } from 'react-redux'
 import { selectCalls } from '../../Store/callsSlice'
@@ -9,8 +9,6 @@ const CallsList = () => {
   const [dim, setDim] = useState([450, 350])
   const [grid, setGrid] = useState([1, 1])
 
-  const myRef = useRef(null)
-
   useEffect(() => {
     const gridLimit = Math.ceil(Math.sqrt(calls.length))
     setGrid([gridLimit, gridLimit])
@@ -20,7 +18,7 @@ const CallsList = () => {
   }, [calls])
 
   return (
-    <div className={styles.xxx} ref={myRef}>
+    <div className={styles.xxx}>
       <div
         style={{
           display: 'grid',

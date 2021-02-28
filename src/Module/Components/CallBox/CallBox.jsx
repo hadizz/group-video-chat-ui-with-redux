@@ -40,8 +40,8 @@ const CallBox = (props) => {
   return (
     <div
       style={{
-        height: props.height, // 450
-        width: props.width, //350
+        height: props.height,
+        width: props.width,
         display: 'flex',
         flexDirection: 'column',
       }}
