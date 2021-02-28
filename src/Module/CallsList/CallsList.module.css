@@ -13,8 +13,19 @@
   flex-wrap: wrap;
 }
 
-.wrap {
-  /*max-width: calc(100% - 100px);*/
-  /*margin: auto;*/
-  /*min-width: calc(100% - 300px);*/
+.xxx {
+  /*width: 1750px;*/
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1750px) {
+  .xxx {
+    /*width: 1000px;*/
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .xxx {
+    /*width: initial;*/
+  }
 }

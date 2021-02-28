@@ -9,7 +9,7 @@ const Container = () => {
   return (
     <div
       className={generateClassName([
-        'h100vh d-flex flex-column flex-x-between',
+        'd-flex flex-column flex-x-between',
         styles.root,
       ])}
     >

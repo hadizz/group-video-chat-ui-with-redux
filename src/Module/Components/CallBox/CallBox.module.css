@@ -1,6 +1,8 @@
 .root {
   position: relative;
-  margin: auto;
+  /*margin: auto;*/
+
+  margin: 0 var(--space8) var(--space8) 0;
 }
 
 .box {
