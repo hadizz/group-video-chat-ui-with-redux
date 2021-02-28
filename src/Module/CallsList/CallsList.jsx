@@ -14,6 +14,9 @@ const CallsList = () => {
   useEffect(() => {
     const gridLimit = Math.ceil(Math.sqrt(calls.length))
     setGrid([gridLimit, gridLimit])
+    if (gridLimit >= 3) {
+      setDim([250, 150])
+    }
   }, [calls])
 
   return (
@@ -21,9 +24,10 @@ const CallsList = () => {
       <div
         style={{
           display: 'grid',
-          gridTemplateColumns: `repeat(${grid[0]}, fit-content(450px))`,
-          gridTemplateRows: `repeat(${grid[1]}, fit-content(350px))`,
+          gridTemplateColumns: `repeat(${grid[0]}, fit-content(150px))`,
+          gridTemplateRows: `repeat(${grid[1]}, fit-content(150px))`,
           gridGap: '16px',
+          justifyItems: 'center',
         }}
       >
         {calls.map((call, index) => (

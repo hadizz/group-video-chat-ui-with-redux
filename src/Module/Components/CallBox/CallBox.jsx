@@ -8,7 +8,6 @@ import { onDrop } from '../../../Store/callsSlice'
 const CallBox = (props) => {
   const dispatch = useDispatch()
   const [mouseIn, setMouseIn] = useState(false)
-  const [btnsWidth, setBtnsWidth] = useState(250)
 
   const showMic = () => {
     if (mouseIn && props.call.isMute) {
@@ -58,33 +57,19 @@ const CallBox = (props) => {
       }
       draggable
     >
-      {/*<div
-        style={{
-          ...(props.call.isMobile
-            ? { height: props.height, width: props.width } // 250
-            : { height: props.height, width: props.width }),
-          margin: 'auto',
-          background: `url(${props.call.image}) center / cover no-repeat`,
-        }}
-      />*/}
-
       <img
         height="100%"
         src={props.call.image}
         alt={props.call.name}
-        style={{ margin: 'auto' }}
-        onLoad={(event) => setBtnsWidth(event.target.clientWidth)}
+        style={{
+          ...(props.call.isMobile ? { margin: 'auto' } : {}),
+        }}
       />
-
-      <div style={{ width: btnsWidth, margin: 'auto', position: 'relative' }}>
-        <div
-          className={generateClassName(['d-flex flex-x-center', styles.box])}
-        >
-          <div className="chips">{props.call.name}</div>
-          <div className={styles.btns}>
-            {showMic()}
-            {showCamera()}
-          </div>
+      <div className={generateClassName(['d-flex flex-x-center', styles.box])}>
+        <div className="chips">{props.call.name}</div>
+        <div className={styles.btns}>
+          {showMic()}
+          {showCamera()}
         </div>
       </div>
     </div>
