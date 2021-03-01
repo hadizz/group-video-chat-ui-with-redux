@@ -3,6 +3,10 @@ import { createSlice } from '@reduxjs/toolkit'
 export const callsSlice = createSlice({
   name: 'calls',
   initialState: {
+    self: {
+      isMute: false,
+      isCameraOff: false,
+    },
     items: [
       {
         id: 0,
@@ -41,11 +45,16 @@ export const callsSlice = createSlice({
         isCameraOff,
       })
     },
+    changeSelfCallModuleStat: (state, action) => {
+      const {module} = action.payload;
+      state.self[module] = !state.self[module];
+    }
   },
 })
 
-export const { onDrop, addCall } = callsSlice.actions
+export const { onDrop, addCall, changeSelfCallModuleStat } = callsSlice.actions
 
 export const selectCalls = (state) => state.calls.items
+export const selectSelfCall = (state) => state.calls.self
 
 export default callsSlice.reducer
