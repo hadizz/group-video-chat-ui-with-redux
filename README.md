@@ -2,6 +2,9 @@
 
 real time web connection UI developed with no extra packages.
 
+#### Screen Shot
+![screen shot](screenshot.png)
+
 ### Let's Get start
 
 ```shell script
@@ -14,6 +17,9 @@ npm install & npm run start
 - show user stats
 - drag and drop calls
 - save redux state in local storage
+
+#### help
+press red button to add calls
 
 #### todos:
 
