@@ -1,4 +1,4 @@
-### Legaler Task
+### Group Video Chat UI With Redux
 
 real time web connection UI developed with no extra packages.
 
