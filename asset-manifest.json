@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/group-video-chat-ui-with-redux/static/css/main.127a74cb.chunk.css",
+    "main.js": "/group-video-chat-ui-with-redux/static/js/main.81df42e2.chunk.js",
+    "main.js.map": "/group-video-chat-ui-with-redux/static/js/main.81df42e2.chunk.js.map",
+    "runtime-main.js": "/group-video-chat-ui-with-redux/static/js/runtime-main.c3a7d7b6.js",
+    "runtime-main.js.map": "/group-video-chat-ui-with-redux/static/js/runtime-main.c3a7d7b6.js.map",
+    "static/js/2.dccfacb1.chunk.js": "/group-video-chat-ui-with-redux/static/js/2.dccfacb1.chunk.js",
+    "static/js/2.dccfacb1.chunk.js.map": "/group-video-chat-ui-with-redux/static/js/2.dccfacb1.chunk.js.map",
+    "index.html": "/group-video-chat-ui-with-redux/index.html",
+    "static/css/main.127a74cb.chunk.css.map": "/group-video-chat-ui-with-redux/static/css/main.127a74cb.chunk.css.map",
+    "static/js/2.dccfacb1.chunk.js.LICENSE.txt": "/group-video-chat-ui-with-redux/static/js/2.dccfacb1.chunk.js.LICENSE.txt",
+    "static/media/Clock.45a805e4.svg": "/group-video-chat-ui-with-redux/static/media/Clock.45a805e4.svg",
+    "static/media/UniClient.c5cc1ff2.svg": "/group-video-chat-ui-with-redux/static/media/UniClient.c5cc1ff2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c3a7d7b6.js",
+    "static/js/2.dccfacb1.chunk.js",
+    "static/css/main.127a74cb.chunk.css",
+    "static/js/main.81df42e2.chunk.js"
+  ]
+}
